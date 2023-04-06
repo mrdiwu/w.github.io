@@ -85,6 +85,18 @@
         color: #333;
       }
 
+      /* 添加iOS的样式 */
+      @media only screen and (max-width: 767px) and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+        /* 适配iOS设备 */
+        #logo {
+          -webkit-transform: translate3d(0, 0, 0);
+        }
+
+        #content {
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+
       /* 设置响应式布局 */
       @media only screen and (max-width: 768px) {
         /* 适配iOS和Android设备 */
@@ -94,7 +106,8 @@
 
         #content {
           margin-top: 50px;
-          padding: 10px;
+          padding:
+          10px;
           font-size: 14px;
         }
 
@@ -117,7 +130,7 @@
     <!-- 在页面中添加主体内容 -->
     <div id="content">
       <h1>欢迎来到我的简单网站</h1>
-      <p>这里是一个简单的网站，只有左上角有一个logo，其他地方都可以用来写字和图片。你可以在这里在这里分享你的文章、图片和想法。</p>
+      <p>这里是一个简单的网站，只有左上角有一个logo，其他地方都可以用来写字和图片。你可以在这里分享你的文章、图片和想法。</p>
       
       <h2>文章标题</h2>
       <p>这里是文章内容，你可以自由地写下自己的想法和见解。</p>
@@ -131,4 +144,3 @@
     </div>
   </body>
 </html>
-
