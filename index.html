@@ -84,19 +84,28 @@
       #footer a:hover {
         color: #333;
       }
+/* 适配iOS设备 */
+@media only screen and (max-width: 767px) and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* 修复iOS Safari上的问题 */
+  #logo {
+    position: relative; /* 添加 position 属性 */
+    top: 10px; /* 从顶部保持10像素的距离 */
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('logo.png');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    -webkit-transform: translate3d(0, 0, 0); /* 添加 transform 属性 */
+  }
 
-      /* 添加iOS的样式 */
-      @media only screen and (max-width: 767px) and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-        /* 适配iOS设备 */
-        #logo {
-          -webkit-transform: translate3d(0, -12px, 0);
-        }
-
-        #content {
-          -webkit-overflow-scrolling: touch;
-          margin-top: 60px;
-        }
-      }
+  #content {
+    -webkit-overflow-scrolling: touch;
+    margin-top: 60px;
+  }
+}
 
       /* 设置响应式布局 */
       @media only screen and (max-width: 768px) {
