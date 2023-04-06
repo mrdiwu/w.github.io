@@ -89,7 +89,7 @@
       @media only screen and (max-width: 767px) and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
         /* 适配iOS设备 */
         #logo {
-          -webkit-transform: translate3d(0, 0, 0);
+          -webkit-transform: translate3d(0, -10px, 0);
         }
 
         #content {
@@ -108,40 +108,37 @@
         #content {
           margin-top: 50px;
           padding: 10px;
-          font-size: 14px;
-        }
+         
+    font-size: 14px;
+    }
 
-        h1 {
-          font-size: 28px;
-        }
+    h1 {
+      font-size: 28px;
+    }
 
-        h2 {
-          font-size: 22px;
-        }
-        }
-      }
-    </style>
-  </head>
+    h2 {
+      font-size: 22px;
+    }
+  }
+</style>
+ </head>
   <body>
     <!-- 在页面中添加logo链接 -->
     <a href="#">
       <div id="logo"></div>
     </a>
+<!-- 在页面中添加主体内容 -->
+<div id="content">
+  <h1>欢迎来到我的简单网站</h1>
+  <p>这里是一个简单的网站，只有左上角有一个logo，其他地方都可以用来写字和图片。你可以在这里分享你的文章、图片和想法。</p>
+  
+  <h2>文章标题</h2>
+  <p>这里是文章内容，你可以自由地写下自己的想法和见解。</p>
+  
+  <img src="picture.jpg" alt="图片描述">
+</div>
 
-    <!-- 在页面中添加主体内容 -->
-    <div id="content">
-      <h1>欢迎来到我的简单网站</h1>
-      <p>这里是一个简单的网站，只有左上角有一个logo，其他地方都可以用来写字和图片。你可以在这里分享你的文章、图片和想法。</p>
-      
-      <h2>文章标题</h2>
-      <p>这里是文章内容，你可以自由地写下自己的想法和见解。</p>
-      
-      <img src="picture.jpg" alt="图片描述">
-    </div>
-
-    <!-- 在页面底部添加版权信息 -->
-    <div id="footer">
-      © 2023 My Simple Website. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
-    </div>
-  </body>
-</html>
+<!-- 在页面底部添加版权信息 -->
+<div id="footer">
+  © 2023 My Simple Website. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+</div>
