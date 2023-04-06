@@ -25,7 +25,7 @@
         background-size: cover;
         border-radius: 50%;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        z-index: 9999; /* 添加 z-index 属性 */
+        z-index: 9999;
       }
 
       /* 设置页面主体样式 */
@@ -37,6 +37,7 @@
         padding: 20px;
         background-color: #fff;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
       }
 
       /* 设置标题样式 */
@@ -84,49 +85,81 @@
       #footer a:hover {
         color: #333;
       }
-/* 适配iOS设备 */
-@media only screen and (max-width: 767px) and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* 修复iOS Safari上的问题 */
-  #logo {
-    position: relative; /* 添加 position 属性 */
-    top: 10px; /* 从顶部保持10像素的距离 */
-    left: 10px;
-    width: 50px;
-    height: 50px;
-    background-image: url('logo.png');
-    background-size: cover;
-    border-radius: 50%;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    z-index: 9999;
-    -webkit-transform: translate3d(0, 0, 0); /* 添加 transform 属性 */
-  }
 
-  #content {
-    -webkit-overflow-scrolling: touch;
-    margin-top: 60px;
-  }
-}
-
-      /* 设置响应式布局 */
-      @media only screen and (max-width: 768px) {
-        /* 适配iOS和Android设备 */
-        body {
-          font-size: 14px;
+      /* iOS 设备样式 */
+      @media only screen and (max-width: 767px) and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+        /* 修复 iOS Safari 上的问题 */
+        #logo {
+          position: relative;
+          top: 10px;
+          left: 10px;
+          width: 50px;
+          height: 50px;
+          background-image: url('https://andrewdwu.com/w.github.io/andrew.jpg');
+          background-size: cover;
+          border-radius: 50%;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          z-index: 9999;
+          -webkit-transform: translate3d(0, 0, 0);
         }
 
         #content {
-          margin-top: 50px;
-          padding: 10px;
+          -webkit-overflow-scrolling: touch;
          
-    font-size: 14px;
-    }
+margin-top: 60px;
+margin-left: 10px;
+margin-right: 10px;
+padding: 20px;
+background-color: #fff;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
 
     h1 {
       font-size: 28px;
+      color: #333;
+      margin-top: 0;
+      margin-bottom: 20px;
     }
 
     h2 {
       font-size: 22px;
+      color: #333;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.5;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    #footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #eee;
+      font-size: 12px;
+      color: #666;
+    }
+
+    #footer a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    #footer a:hover {
+      color: #333;
     }
   }
 </style>
@@ -151,3 +184,5 @@
 <div id="footer">
   © 2023 My Simple Website. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
 </div>
+ </body>
+</html>
