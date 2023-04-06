@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>My Simple Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <style>
       /* 设置页面样式 */
       body {
@@ -14,22 +13,23 @@
         color: #333;
       }
 
-      /* 设置logo样式 */
-      #logo {
-        position: relative;
-        padding-top: 60px;
-        width: 50px;
-        height: 50px;
-        margin: 0 0 20px 20px;
-        background-image: url('https://andrewdwu.com/w.github.io/andrew.jpg');
-        background-size: cover;
-        border-radius: 50%;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-      }
+       /* 设置logo样式 */
+       #logo {
+         position: absolute;
+         top: 20px;
+         left: 20px;
+         width: 50px;
+         height: 50px;
+         background-image: url('logo.png');
+         background-size: cover;
+         border-radius: 50%;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+         z-index: 9999; /* 添加 z-index 属性 */
+}
 
       /* 设置页面主体样式 */
       #content {
-        margin-top: 20px;
+        margin-top: 100px;
         margin-left: auto;
         margin-right: auto;
         max-width: 800px;
@@ -43,14 +43,12 @@
         font-size: 32px;
         font-weight: bold;
         margin-top: 0;
-        line-height: 1.2;
       }
 
       h2 {
         font-size: 24px;
         font-weight: bold;
         margin-top: 30px;
-        line-height: 1.2;
       }
 
       /* 设置段落样式 */
@@ -71,7 +69,6 @@
         text-align: center;
         margin-top: 30px;
         padding: 10px;
-        background-color: #eee;
         font-size: 12px;
       }
 
@@ -81,36 +78,14 @@
       }
 
       #footer a:hover {
-        color: #333;
-      }
-
-      /* 设置响应式布局 */
-      @media only screen and (max-width: 768px) {
-        /* 适配iOS和Android设备 */
-        body {
-          font-size: 14px;
-        }
-
-        #content {
-          margin-top: 50px;
-          padding
-: 10px;
-          font-size: 14px;
-        }
-
-        h1 {
-          font-size: 28px;
-        }
-
-        h2 {
-          font-size: 22px;
-        }
       }
     </style>
   </head>
   <body>
     <!-- 在页面中添加logo链接 -->
-    <div id="logo"></div>
+    <a href="https://imdw.net/">
+      <div id="logo"></div>
+    </a>
 
     <!-- 在页面中添加主体内容 -->
     <div id="content">
